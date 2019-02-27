@@ -20,10 +20,7 @@
 
 body{
 	background-image: url("images/background.png");
-	/* Set a specific height */
 	height: 500px; 
-
-	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -87,8 +84,8 @@ body{
 
 .site-content{
 	opacity: 0;
-	animation: animContent 2s forwards;
-	animation-delay: 3s;
+	animation: animContent 4s forwards;
+	animation-delay: 2s;
 }
 
 .chargement{
