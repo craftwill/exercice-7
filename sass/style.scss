@@ -73,17 +73,23 @@ body{
 
 
 .site-title{
-	animation: animTitle 4s forwards;
-	animation-delay: 2s;
+	opacity: 0;
+	animation: animTitle 3s forwards;
+	animation-delay: 1s;
 }
 
 .site-description{
 	opacity: 0;
 	transform: translateY(-300%);
-	animation: animDescription 4s forwards;
-	animation-delay: 1s;
+	animation: animDescription 2s forwards;
+	animation-delay: 1.5s;
 }
 
+.site-content{
+	opacity: 0;
+	animation: animContent 2s forwards;
+	animation-delay: 3s;
+}
 
 .chargement{
 	animation: animChargementFond 2s forwards;

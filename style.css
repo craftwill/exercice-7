@@ -72,23 +72,27 @@
 
 @-webkit-keyframes animTitle {
   from {
-    -webkit-transform: rotateZ(360deg);
-            transform: rotateZ(360deg);
+    opacity: 0;
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
   }
   to {
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
 @keyframes animTitle {
   from {
-    -webkit-transform: rotateZ(360deg);
-            transform: rotateZ(360deg);
+    opacity: 0;
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
   }
   to {
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -180,20 +184,29 @@ body {
 }
 
 .site-title {
-  -webkit-animation: animTitle 4s forwards;
-          animation: animTitle 4s forwards;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  opacity: 0;
+  -webkit-animation: animTitle 3s forwards;
+          animation: animTitle 3s forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 .site-description {
   opacity: 0;
   -webkit-transform: translateY(-300%);
           transform: translateY(-300%);
-  -webkit-animation: animDescription 4s forwards;
-          animation: animDescription 4s forwards;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation: animDescription 2s forwards;
+          animation: animDescription 2s forwards;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.site-content {
+  opacity: 0;
+  -webkit-animation: animContent 2s forwards;
+          animation: animContent 2s forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 
 .chargement {
