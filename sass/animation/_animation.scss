@@ -28,3 +28,21 @@
         opacity: 0;
     }
 }
+
+@keyframes animTitle{
+    from{
+        transform: rotateZ(360deg);
+    }
+    to{
+        transform: rotateZ(0deg);
+    }
+}
+
+@keyframes animDescription{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

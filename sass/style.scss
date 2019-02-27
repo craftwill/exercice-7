@@ -19,7 +19,17 @@
 }
 
 body{
-	background-color: lightcoral;
+	background-image: url("images/background.png");
+	/* Set a specific height */
+	height: 500px; 
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-repeat: no-repeat;
+	
 	color: black;
 }
 
@@ -62,17 +72,27 @@ body{
 }
 
 
+.site-title{
+	animation: animTitle 4s forwards;
+	animation-delay: 2s;
+}
 
+.site-description{
+	opacity: 0;
+	transform: translateY(-300%);
+	animation: animDescription 4s forwards;
+	animation-delay: 1s;
+}
 
 
 .chargement{
-	animation: animChargementFond 3s forwards;
+	animation: animChargementFond 2s forwards;
 	@include element-recouvrant-page;
 	background-color: black;
 }
 
 .chargementLettre{
-	animation: animChargementLettre 2.3s forwards;
+	animation: animChargementLettre 1.3s forwards;
 	color: white;
 	font-size: 54px;
 }
