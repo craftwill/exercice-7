@@ -1,0 +1,99 @@
+
+.site-branding .site-title,
+.site-branding .site-description{
+    padding: 11px;
+    border-radius: 11px;
+}
+
+.site-branding .site-title{
+    font-size: 3em;
+    background-color: #ddd;
+}
+
+.site-branding .site-description{
+    font-size: 1.5em;
+    background-color: #aaa;
+    color: white;
+}
+
+body{
+	background-image: url("images/background.png");
+	height: 500px; 
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+	color: black;
+}
+
+#post-1>.entry-header>.entry-title{
+	color: white;
+	transform: rotate3d(44,5,1,23deg);
+}
+
+#recent-posts-2>ul>li>a{
+	color: red;
+}
+
+#recent-comments-2>ul a{
+	color: red;
+}
+
+#archives-2>ul>li>a{
+	color: red;
+}
+
+#categories-2>ul>li>a{
+	color: red;
+}
+
+#meta-2>ul>li>a{
+	color: red;
+}
+
+#post-1 a{
+	color: white;
+}
+
+#post-1 path{
+	color: #ddd;
+}
+
+.classePersoTexteExercice{
+    font-size: 22px;
+    padding: 3px;
+}
+
+
+.site-title{
+	opacity: 0;
+	animation: animTitle 3s forwards;
+	animation-delay: 1s;
+}
+
+.site-description{
+	opacity: 0;
+	transform: translateY(-300%);
+	animation: animDescription 2s forwards;
+	animation-delay: 1.5s;
+}
+
+.site-content{
+	opacity: 0;
+	animation: animContent 4s forwards;
+	animation-delay: 2s;
+}
+
+.chargement{
+	animation: animChargementFond 2s forwards;
+	@include element-recouvrant-page;
+	background-color: black;
+}
+
+.chargementLettre{
+	animation: animChargementLettre 1.3s forwards;
+	color: white;
+	font-size: 54px;
+}
