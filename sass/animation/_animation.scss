@@ -48,3 +48,12 @@
         opacity: 1;
     }
 }
+
+@keyframes animContent{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

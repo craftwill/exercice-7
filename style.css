@@ -114,6 +114,24 @@
   }
 }
 
+@-webkit-keyframes animContent {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animContent {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .site-branding .site-title,
 .site-branding .site-description {
   padding: 11px;
